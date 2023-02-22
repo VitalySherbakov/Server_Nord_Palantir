@@ -1,1 +1,0 @@
-# Server_Nord_Palantir

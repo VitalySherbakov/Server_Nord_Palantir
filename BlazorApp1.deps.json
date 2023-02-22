@@ -6,7 +6,7 @@
   "compilationOptions": {
     "defines": [
       "TRACE",
-      "RELEASE",
+      "DEBUG",
       "NETCOREAPP",
       "NETCOREAPP3_1",
       "NETCOREAPP1_0_OR_GREATER",
@@ -21,7 +21,7 @@
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
-    "optimize": true,
+    "optimize": false,
     "keyFile": "",
     "emitEntryPoint": true,
     "xmlDoc": false,
@@ -29,9 +29,8 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Server_Narod_Palantir_VS/1.0.0": {
+      "BlazorApp1/1.0.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -316,13 +315,12 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "Server_Narod_Palantir_VS.dll": {}
+          "BlazorApp1.dll": {}
         },
         "compile": {
-          "Server_Narod_Palantir_VS.dll": {}
+          "BlazorApp1.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {},
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2018,17 +2016,10 @@
     }
   },
   "libraries": {
-    "Server_Narod_Palantir_VS/1.0.0": {
+    "BlazorApp1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gfDtAL1WhkjbRdbZlt/ZeQYCbgRpNCZCGj+yeqHObsNFRDHjq8qZJOX9AyTxJpSRYMi9SJk7JDyAbbVYRgEhAA==",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.0",
-      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
